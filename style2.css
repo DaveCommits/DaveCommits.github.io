@@ -1,0 +1,217 @@
+:root {
+  font-size: 18px;
+  --bgColor: hsla(61, 80%, 90%, 0.9);
+  --mainColor: hsl(44, 99%, 65%);
+  --secColor: hsl(33, 100%, 56%);
+  --hlColor: 	hsl(26, 98%, 47%);
+  --hlaColor: hsl(26, 98%, 47%, 0.4);
+  --headColor: hsl(0, 0%, 10%);
+  --textColor: 	hsl(0, 0%, 20%);
+  --whitetrans: hsla(0, 0%, 100%, 0.7);
+}
+
+body {
+    background-color: var(--mainColor);
+    background-image: linear-gradient(to right, var(--mainColor),
+      var(--bgColor) 10% 90%, var(--mainColor));
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: var(--hlaColor);
+  border-bottom: 1px solid var(--whitetrans);
+}
+
+header:hover,
+header:hover nav a,
+header:hover nav a svg{
+  background-color: var(--hlColor);
+  color: white;
+  border-color: white;
+  fill: white;
+  transition: all 400ms ease-out;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+
+.logonav {
+  display: block;
+  height: 4rem;
+  margin-left: 1%;
+  background: radial-gradient(circle, hsla(0, 0%, 100%,0.3),transparent 80%);
+}
+
+.navitem {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: var(--whitetrans);
+  border: 1px solid var(--whitetrans);
+  border-radius: 3px;
+  padding: 0.2rem 0.8rem;
+  margin: 0.1rem 0.1rem;
+  white-space: nowrap;
+}
+
+.menuicon {
+  position: relative;
+  top: 2px;
+  fill: var(--whitetrans);
+}
+
+.navitem:hover {
+  color: var(--headColor);
+  border-color: var(--headColor);
+}
+
+.navitem:hover .menuicon {
+  fill: var(--headColor);
+}
+
+section {
+  width: 70%;
+  max-width: 2400px;
+  margin: 0 auto;
+  background-color: var(--bgColor);
+  padding: 4.5rem 0;
+}
+
+.logotop {
+  display: block;
+  width:100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.manifestdesc {
+  font-family: 'Playball', Helvetica, sans-serif;
+  text-align: center;
+  color: var(--textColor);
+}
+
+hr {
+  width: 70%;
+  max-width: 2400px;
+  border-top: 0.2rem solid var(--hlColor);
+  border-bottom: 0;
+  margin: 0.2rem auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.sectiontitle {
+  font-family: 'Playball', Helvetica, sans-serif;
+  text-align: center;
+  color: var(--headColor);
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: 'Roboto', serif;
+  font-size: 1.2rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--textColor);
+}
+
+.mesecorrente {
+  font-family: 'Playball', Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--headColor);
+}
+
+.pizzamesebox {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pizzamese {
+  display: block;
+  width: 100%;
+  border: 2px solid var(--hlColor);
+  border-radius: 1rem;
+}
+
+figcaption {
+  font-size: 1rem;
+  font-family: 'Roboto',cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.menup {
+  margin: 0 1rem 2rem 1rem;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tablecontainer {
+  flex: 1 1 40%;
+  margin: 0 1rem;
+}
+
+.menu {
+  margin: 0 auto;
+}
+
+.menutitle {
+  font-family: 'Playball', Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: var(--hlColor);
+}
+
+.nomepizza {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--textColor);
+  padding-right: 0.2rem;
+}
+
+.prezzopizza {
+  white-space: nowrap;
+}
+
+.descpizza {
+  font-family: 'Roboto', cursive;
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+  padding: 0 0.2rem 0.8rem 0;
+  border-top: 1px dotted var(--secColor);
+}
+
+iframe {
+  border: 2px solid var(--hlColor);
+  border-radius: 1rem;
+}
+
+footer {
+  background-color: var(--hlColor);
+  font-family: 'Playball', sans-serif;
+  font-size: 0.8rem;
+}
