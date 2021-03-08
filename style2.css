@@ -1,19 +1,18 @@
 :root {
   font-size: 18px;
-  --bgColor: hsla(61, 80%, 90%, 0.9);
-  --mainColor: hsl(44, 99%, 65%);
-  --secColor: hsl(33, 100%, 56%);
-  --hlColor: 	hsl(26, 98%, 47%);
-  --hlaColor: hsl(26, 98%, 47%, 0.4);
-  --headColor: hsl(0, 0%, 10%);
-  --textColor: 	hsl(0, 0%, 20%);
-  --whitetrans: hsla(0, 0%, 100%, 0.7);
+  --bgColor: 61, 80%, 90%;
+  --mainColor: 44, 99%, 65%;
+  --secColor: 33, 100%, 56%;
+  --hlColor: 	26, 98%, 47%;
+  --headColor: 0, 0%, 10%;
+  --textColor: 0, 0%, 20%;
+  --white: 0, 0%, 100%;
 }
 
 body {
-    background-color: var(--mainColor);
-    background-image: linear-gradient(to right, var(--mainColor),
-      var(--bgColor) 10% 90%, var(--mainColor));
+    background-color: hsl(var(--mainColor));
+    background-image: linear-gradient(to right, hsl(var(--mainColor)),
+      hsl(var(--bgColor)) 10% 90%, hsl(var(--mainColor)));
 }
 
 header {
@@ -23,14 +22,14 @@ header {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
-  background-color: var(--hlaColor);
-  border-bottom: 1px solid var(--whitetrans);
+  background-color: hsla(var(--hlColor), 0.4);
+  border-bottom: 1px solid hsla(var(--white), 0.7);
 }
 
 header:hover,
 header:hover nav a,
 header:hover nav a svg{
-  background-color: var(--hlColor);
+  background-color: hsl(var(--hlColor));
   color: white;
   border-color: white;
   fill: white;
@@ -53,9 +52,9 @@ nav {
 .navitem {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  color: var(--whitetrans);
-  border: 1px solid var(--whitetrans);
+  font-size: 1.4rem;
+  color: hsla(var(--white), 0.7);
+  border: 1px solid hsla(var(--white), 0.7);
   border-radius: 3px;
   padding: 0.2rem 0.8rem;
   margin: 0.1rem 0.1rem;
@@ -65,23 +64,23 @@ nav {
 .menuicon {
   position: relative;
   top: 2px;
-  fill: var(--whitetrans);
+  fill: hsla(var(--white), 0.7);
 }
 
 .navitem:hover {
-  color: var(--headColor);
-  border-color: var(--headColor);
+  color: hsl(var(--headColor));
+  border-color: hsl(var(--headColor));
 }
 
 .navitem:hover .menuicon {
-  fill: var(--headColor);
+  fill: hsl(var(--headColor));
 }
 
 section {
   width: 70%;
   max-width: 2400px;
   margin: 0 auto;
-  background-color: var(--bgColor);
+  background-color: hsl(var(--bgColor));
   padding: 4.5rem 0;
 }
 
@@ -99,13 +98,13 @@ h2 {
 .manifestdesc {
   font-family: 'Playball', Helvetica, sans-serif;
   text-align: center;
-  color: var(--textColor);
+  color: hsl(var(--textColor));
 }
 
 hr {
   width: 70%;
   max-width: 2400px;
-  border-top: 0.2rem solid var(--hlColor);
+  border-top: 0.2rem solid hsl(var(--hlColor));
   border-bottom: 0;
   margin: 0.2rem auto;
 }
@@ -117,7 +116,7 @@ h1 {
 .sectiontitle {
   font-family: 'Playball', Helvetica, sans-serif;
   text-align: center;
-  color: var(--headColor);
+  color: hsl(var(--headColor));
   margin-bottom: 2rem;
 }
 
@@ -128,26 +127,26 @@ p {
 
 .subtitle {
   text-align: center;
-  color: var(--textColor);
+  color: hsl(var(--textColor));
 }
 
 .mesecorrente {
   font-family: 'Playball', Helvetica, sans-serif;
   text-align: center;
   margin-top: 1rem;
-  color: var(--headColor);
+  color: hsl(var(--headColor));
 }
 
 .pizzamesebox {
   width: 90%;
-  max-width: 800px;
+  max-width: 45rem;
   margin: 0 auto;
 }
 
 .pizzamese {
   display: block;
   width: 100%;
-  border: 2px solid var(--hlColor);
+  border: 2px solid hsl(var(--hlColor));
   border-radius: 1rem;
 }
 
@@ -162,25 +161,21 @@ figcaption {
   margin: 0 1rem 2rem 1rem;
 }
 
-.flexcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .tablecontainer {
-  flex: 1 1 40%;
   margin: 0 1rem;
 }
 
 .menu {
-  margin: 0 auto;
+  max-width: 45rem;
+  width: 90%;
+  margin: 2rem auto 0 auto;
 }
 
 .menutitle {
   font-family: 'Playball', Helvetica, sans-serif;
   font-size: 1.8rem;
-  color: var(--hlColor);
+  color: hsl(var(--hlColor));
+  padding: 1rem 0 1rem 0;
 }
 
 .nomepizza {
@@ -188,12 +183,13 @@ figcaption {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--textColor);
+  color: hsl(var(--textColor));
   padding-right: 0.2rem;
 }
 
 .prezzopizza {
   white-space: nowrap;
+  text-align: right;
 }
 
 .descpizza {
@@ -202,16 +198,35 @@ figcaption {
   font-weight: 300;
   font-style: italic;
   padding: 0 0.2rem 0.8rem 0;
-  border-top: 1px dotted var(--secColor);
+  border-top: 1px solid hsla(var(--secColor), 0.4);
+  width: 100%;
+}
+
+.overflowmanager {
+  max-width: 45rem;
+  max-height: 34rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.framecontainer {
+  position: relative;
+  padding-top: 75%;
 }
 
 iframe {
-  border: 2px solid var(--hlColor);
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  border: 2px solid hsl(var(--hlColor));
   border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  max-height: 34rem;
 }
 
 footer {
-  background-color: var(--hlColor);
+  background-color: hsl(var(--hlColor));
   font-family: 'Playball', sans-serif;
   font-size: 0.8rem;
 }
