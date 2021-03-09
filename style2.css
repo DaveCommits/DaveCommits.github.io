@@ -23,8 +23,8 @@ header {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
-  background-color: hsla(var(--hlColor), 0.4);
-  border-bottom: 1px solid hsla(var(--white), 0.7);
+  background-color: hsla(var(--hlColor), 0.6);
+  border-bottom: 1px solid hsla(var(--white), 0.8);
 }
 
 header:hover,
@@ -251,7 +251,7 @@ em {
 }
 
 footer {
-  background-color: hsl(var(--footerColor));
+  background-color: hsla(var(--hlColor), 0.6);
   border-top: 1px solid hsla(var(--textColor), 0.6);
 }
 
@@ -259,6 +259,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0.2rem 0;
 }
 
 .footerlogo {
@@ -269,21 +270,53 @@ footer {
 .totop {
   margin: 0 2rem;
 }
+
+.footerlink {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: hsl(var(--textColor));
+}
+
+.footerlink:hover {
+  color: hsla(var(--white), 0.6);
+}
+
 .contactinfo {
   font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
+  font-weight: bold;
   color: hsl(var(--textColor));
   line-height: 2rem;
   margin: 0 2rem;
 }
 
 .footerhr {
-  width: 100%;
-  border-top: 1px solid hsla(var(--white), 0.6);
+  width: 99%;
+  border-top: 1px solid hsla(var(--white), 0.8);
   border-bottom: 0;
+  margin: 0;
+}
+
+.social {
+  margin: 0 2rem;
+}
+
+.socialline {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: hsl(var(--textColor));
+}
+
+.logosocial {
+  position: relative;
+  top: 0.3rem;
 }
 
 .cr{
   font-size: 0.6rem;
   color: hsl(var(--textColor));
+  padding: 0.3rem 0.2rem;
 }
