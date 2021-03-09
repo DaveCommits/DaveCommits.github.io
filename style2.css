@@ -6,6 +6,7 @@
   --hlColor: 	26, 98%, 47%;
   --headColor: 0, 0%, 10%;
   --textColor: 0, 0%, 20%;
+  --footerColor: 166, 17%, 72%;
   --white: 0, 0%, 100%;
 }
 
@@ -101,7 +102,7 @@ h2 {
   color: hsl(var(--textColor));
 }
 
-hr {
+.mainhr {
   width: 70%;
   max-width: 2400px;
   border-top: 0.2rem solid hsl(var(--hlColor));
@@ -250,7 +251,39 @@ em {
 }
 
 footer {
-  background-color: hsl(var(--hlColor));
-  font-family: 'Playball', sans-serif;
+  background-color: hsl(var(--footerColor));
+  border-top: 1px solid hsla(var(--textColor), 0.6);
+}
+
+.footersection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerlogo {
+  width: 8rem;
+  margin: 0 2rem;
+}
+
+.totop {
+  margin: 0 2rem;
+}
+.contactinfo {
+  font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
+  color: hsl(var(--textColor));
+  line-height: 2rem;
+  margin: 0 2rem;
+}
+
+.footerhr {
+  width: 100%;
+  border-top: 1px solid hsla(var(--white), 0.6);
+  border-bottom: 0;
+}
+
+.cr{
+  font-size: 0.6rem;
+  color: hsl(var(--textColor));
 }
