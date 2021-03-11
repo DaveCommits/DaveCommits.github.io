@@ -195,13 +195,14 @@ strong {
 .prezzopizza {
   font-family: 'Roboto';
   font-size: 1.5rem;
+  color: hsl(var(--textColor));
   white-space: nowrap;  /*impedisco il wrap sullo spazio tra prezzo e €*/
   text-align: right;
 }
 
 .descpizza {
   font-family: 'Roboto', cursive;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   font-style: italic;
   padding: 0 0.2rem 0.8rem 0;
@@ -321,4 +322,28 @@ footer {
   font-size: 0.8rem;
   color: hsl(var(--textColor));
   padding: 0.3rem 0.2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    width: 90%;
+    background-color: transparent;
+  }
+
+  .menu {
+    width: 100%;
+    max-width: none;
+  }
+
+  .nomepizza {
+    font-size: 2rem;
+  }
+
+  .prezzopizza {
+    font-size: 2rem;
+  }
+
+  .descpizza {
+    font-size: 1.2rem;
+  }
 }
