@@ -324,7 +324,7 @@ footer {
   padding: 0.3rem 0.2rem;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) and (orientation: portrait){
   section {
     width: 90%;
     background-color: transparent;
