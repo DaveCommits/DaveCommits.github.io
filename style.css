@@ -52,7 +52,7 @@ nav {
 .navitem {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: hsla(var(--white), 0.7);
   border: 1px solid hsla(var(--white), 0.7);
   border-radius: 3px;
@@ -87,12 +87,12 @@ section {
 .logotop {
   display: block;
   width:100%;
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 .manifestdesc {
@@ -110,7 +110,7 @@ h2 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .sectiontitle {
@@ -122,7 +122,7 @@ h1 {
 
 p {
   font-family: 'Roboto', serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .subtitle {
@@ -139,7 +139,7 @@ p {
 
 .pizzamesebox {
   width: 90%;
-  max-width: 45rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -151,7 +151,7 @@ p {
 }
 
 figcaption {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Roboto',cursive;
   font-weight: 300;
   font-style: italic;
@@ -177,14 +177,14 @@ strong {
 
 .menutitle {
   font-family: 'Playball', Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: hsl(var(--hlColor));
   padding: 1rem 0 1rem 0;
 }
 
 .nomepizza {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   color: hsl(var(--textColor));
@@ -192,13 +192,15 @@ strong {
 }
 
 .prezzopizza {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
   white-space: nowrap;  /*impedisco il wrap sullo spazio tra prezzo e €*/
   text-align: right;
 }
 
 .descpizza {
   font-family: 'Roboto', cursive;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 300;
   font-style: italic;
   padding: 0 0.2rem 0.8rem 0;
@@ -237,7 +239,7 @@ iframe {
 
 address {
   font-family: 'Roboto', serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .indirizzo {
@@ -274,7 +276,7 @@ footer {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: hsl(var(--textColor));
 }
 
@@ -284,7 +286,7 @@ footer {
 
 .contactinfo {
   font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: hsl(var(--textColor));
   line-height: 2rem;
@@ -305,7 +307,7 @@ footer {
 .socialline {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: hsl(var(--textColor));
 }
 
@@ -315,7 +317,7 @@ footer {
 }
 
 .cr{
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: hsl(var(--textColor));
   padding: 0.3rem 0.2rem;
 }
