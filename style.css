@@ -1,5 +1,4 @@
 :root {
-  min-width: 800px;
   text-size-adjust: none;
   --bgColor: 61, 80%, 90%;
   --mainColor: 44, 99%, 65%;
@@ -9,6 +8,10 @@
   --textColor: 0, 0%, 20%;
   --footerColor: 166, 17%, 72%;
   --white: 0, 0%, 100%;
+}
+
+html{
+  min-width: 800px;
 }
 
 body {
@@ -331,6 +334,10 @@ footer {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 800px) {
+  html {
+    min-width: none;
+  }
+
   .navitemdesc {
     font-size: 1.2rem;
   }
@@ -346,12 +353,12 @@ footer {
 }
 
 @media only screen and (max-width: 480px){
-  :root {
+  html {
     min-width: none;
   }
 
   section {
-    width: 85%;
+    width: 80%;
     background-color: transparent;
   }
 
