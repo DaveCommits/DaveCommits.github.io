@@ -330,7 +330,7 @@ footer {
   padding: 0.3rem 0.2rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 480px) and (max-width: 800px) {
   .navitemdesc {
     font-size: 1.2rem;
   }
@@ -345,7 +345,7 @@ footer {
   }
 }
 
-@media only screen and (max-device-width: 480px) and (orientation: portrait){
+@media only screen and (max-width: 480px){
   section {
     width: 85%;
     background-color: transparent;
@@ -358,17 +358,5 @@ footer {
   .menu {
     width: 100%;
     max-width: none;
-  }
-
-  .nomepizza {
-    font-size: 1.8rem;
-  }
-
-  .prezzopizza {
-    font-size: 1.8rem;
-  }
-
-  .descpizza {
-    font-size: 1.2rem;
   }
 }
