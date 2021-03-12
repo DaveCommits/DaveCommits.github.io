@@ -10,10 +10,6 @@
   --white: 0, 0%, 100%;
 }
 
-html{
-  min-width: 800px;
-}
-
 body {
   background-color: hsl(var(--mainColor));
   background-image: linear-gradient(to right, hsl(var(--mainColor)),
@@ -333,10 +329,17 @@ footer {
   padding: 0.3rem 0.2rem;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 800px) {
+@media only screen and (min-device-width: 800px) {
   html {
-    min-width: none;
+    min-width: 800px;
   }
+
+  header {
+    min-width: 800px;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
 
   .navitemdesc {
     font-size: 1.2rem;
@@ -352,11 +355,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 480px){
-  html {
-    min-width: none;
-  }
-
+@media only screen and (max-device-width: 480px) and (orientation: portrait){
   section {
     width: 80%;
     background-color: transparent;
