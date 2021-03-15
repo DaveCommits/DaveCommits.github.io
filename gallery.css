@@ -1,0 +1,45 @@
+:root {
+  text-size-adjust: none; /*block mobile devices trying to auto adjust text-size*/
+  --similKhaki: 61, 80%, 90%;
+  --lightOrange: 44, 99%, 65%;
+  --secColor: 33, 100%, 56%;
+  --strongOrange: 26, 98%, 47%;
+  --blacklight10: 0, 0%, 10%;
+  --blacklight20: 0, 0%, 20%;
+  --footerColor: 166, 17%, 72%;
+  --white: 0, 0%, 100%;
+}
+
+body {
+  background-color: hsl(var(--lightOrange));
+  background-image: linear-gradient(to right, hsl(var(--lightOrange)),
+    hsl(var(--similKhaki)) 10% 90%, hsl(var(--lightOrange)));
+}
+
+div.galleria2021 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  width: 70%;
+  margin: 0 auto;
+}
+
+div.imagecontainer {
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.imagecontainer img:focus {
+  position: fixed;
+  width: 70%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
