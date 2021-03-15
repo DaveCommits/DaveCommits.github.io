@@ -27,6 +27,7 @@ div.galleria2021 {
 div.imagecontainer {
   position: relative;
   padding-top: 100%;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -36,10 +37,10 @@ img {
   width: 100%;
 }
 
-.imagecontainer img:focus {
+div.imagecontainer:focus{
   position: fixed;
-  width: 70%;
+  width: 50%;
   top: 0;
-  left: 0;
+  left: 25%;
   z-index: 1;
 }
