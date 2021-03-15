@@ -358,16 +358,16 @@ p.cr{
 
 /*Tablets*/
 @media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
-  .navitemdesc {
+  a.navitemdesc {
     font-size: 1.2rem;
   }
 
-  .menuicon {
+  svg.menuicon {
     width: 1.2rem;
     height: 1.2rem;
   }
 
-  .logonav {
+  img.logonav {
     height: 2.5rem;
   }
 }
@@ -379,30 +379,30 @@ p.cr{
     background-color: transparent;
   }
 
-  .navitemdesc {
+  a.navitemdesc {
     display: none;
   }
 
-  .menu {
+  table.menu {
     width: 100%;
     max-width: none;
   }
 
-  .footerlogo {
+  img.footerlogo {
     margin: 0 1rem;
   }
 
-  .totop {
+  a.totop {
     margin: 0 1rem;
   }
 
-  .contactinfo {
+  address.contactinfo {
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 0 1rem;
   }
 
-  .social {
+  div.social {
     margin: 0 1rem;
   }
 }
