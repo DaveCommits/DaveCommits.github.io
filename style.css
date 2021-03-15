@@ -1,21 +1,76 @@
+/*---Global styles---*/
 :root {
-  text-size-adjust: none;
-  --bgColor: 61, 80%, 90%;
-  --mainColor: 44, 99%, 65%;
+  text-size-adjust: none; /*block mobile devices trying to auto adjust text-size*/
+  --similKhaki: 61, 80%, 90%;
+  --lightOrange: 44, 99%, 65%;
   --secColor: 33, 100%, 56%;
-  --hlColor: 	26, 98%, 47%;
-  --headColor: 0, 0%, 10%;
-  --textColor: 0, 0%, 20%;
+  --strongOrange: 26, 98%, 47%;
+  --blacklight10: 0, 0%, 10%;
+  --blacklight20: 0, 0%, 20%;
   --footerColor: 166, 17%, 72%;
   --white: 0, 0%, 100%;
 }
 
 body {
-  background-color: hsl(var(--mainColor));
-  background-image: linear-gradient(to right, hsl(var(--mainColor)),
-    hsl(var(--bgColor)) 10% 90%, hsl(var(--mainColor)));
+  background-color: hsl(var(--lightOrange));
+  background-image: linear-gradient(to right, hsl(var(--lightOrange)),
+    hsl(var(--similKhaki)) 10% 90%, hsl(var(--lightOrange)));
 }
 
+section {
+  width: 70%;
+  max-width: 2400px;
+  margin: 0 auto;
+  background-color: hsl(var(--similKhaki));
+  padding: 4.5rem 0; /*making space for navbar and giving space at section start*/
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: 'Roboto', serif;
+  font-size: 1.5rem;
+}
+
+address {
+  font-family: 'Roboto', serif;
+  font-size: 1.5rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+hr.mainhr {
+  width: 70%;
+  max-width: 2400px;
+  border-top: 0.2rem solid hsl(var(--strongOrange));
+  border-bottom: 0;
+  margin: 0.2rem auto;
+}
+
+.sectiontitle {
+  font-family: 'Playball', Helvetica, sans-serif;
+  text-align: center;
+  color: hsl(var(--blacklight10));
+  margin-bottom: 2rem;
+}
+
+/*---Navigation---*/
 header {
   position: fixed;
   top: 0;
@@ -23,14 +78,14 @@ header {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
-  background-color: hsla(var(--hlColor), 0.6);
+  background-color: hsla(var(--strongOrange), 0.6);
   border-bottom: 1px solid hsla(var(--white), 0.8);
 }
 
 header:hover,
 header:hover nav a,
 header:hover nav a svg{
-  background-color: hsl(var(--hlColor));
+  background-color: hsl(var(--strongOrange));
   color: white;
   border-color: white;
   fill: white;
@@ -45,7 +100,7 @@ nav {
 
 .logonav {
   display: block;
-  height: 4rem;
+  height: 4rem;  /*This is implicitly setting the height of the nav*/
   margin-left: 1%;
   background: radial-gradient(circle, hsla(0, 0%, 100%,0.3),transparent 80%);
 }
@@ -63,32 +118,25 @@ nav {
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  white-space: nowrap;
+  white-space: nowrap; /*Doesn't allow text to wrap, setting a min-width implicitly*/
 }
 
 .menuicon {
   position: relative;
-  top: 2px;
+  top: 2px; /*Aligns icons with text*/
   fill: hsla(var(--white), 0.7);
 }
 
 .navitem:hover {
-  color: hsl(var(--headColor));
-  border-color: hsl(var(--headColor));
+  color: hsl(var(--blacklight10));
+  border-color: hsl(var(--blacklight10));
 }
 
 .navitem:hover .menuicon {
-  fill: hsl(var(--headColor));
+  fill: hsl(var(--blacklight10));
 }
 
-section {
-  width: 70%;
-  max-width: 2400px;
-  margin: 0 auto;
-  background-color: hsl(var(--bgColor));
-  padding: 4.5rem 0;
-}
-
+/*---Manifest---*/
 .logotop {
   display: block;
   width:100%;
@@ -96,119 +144,85 @@ section {
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 2.5rem;
-}
-
 .manifestdesc {
   font-family: 'Playball', Helvetica, sans-serif;
   text-align: center;
-  color: hsl(var(--textColor));
+  color: hsl(var(--blacklight20));
 }
 
-.nowrap {
-  white-space: nowrap;
-}
-
-.mainhr {
-  width: 70%;
-  max-width: 2400px;
-  border-top: 0.2rem solid hsl(var(--hlColor));
-  border-bottom: 0;
-  margin: 0.2rem auto;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-.sectiontitle {
-  font-family: 'Playball', Helvetica, sans-serif;
+/*---Mese---*/
+p.subtitle {
   text-align: center;
-  color: hsl(var(--headColor));
-  margin-bottom: 2rem;
+  color: hsl(var(--blacklight20));
 }
 
-p {
-  font-family: 'Roboto', serif;
-  font-size: 1.5rem;
-}
-
-.subtitle {
-  text-align: center;
-  color: hsl(var(--textColor));
-}
-
-.mesecorrente {
+h2.mesecorrente {
   font-family: 'Playball', Helvetica, sans-serif;
   text-align: center;
   margin-top: 1rem;
-  color: hsl(var(--headColor));
+  color: hsl(var(--blacklight10));
 }
 
-.pizzamesebox {
+figure.pizzamesebox {
   width: 90%;
   max-width: 60rem;
   margin: 0 auto;
 }
 
-.pizzamese {
+img.pizzamese {
   display: block;
   width: 100%;
-  border: 2px solid hsl(var(--hlColor));
+  border: 2px solid hsl(var(--strongOrange));
   border-radius: 1rem;
 }
 
-figcaption {
+figcaption.pizzamesedesc {
   font-size: 1.2rem;
   font-family: 'Roboto',cursive;
   font-weight: 300;
   font-style: italic;
 }
 
-.menup {
+/*---Menù---*/
+p.menup {
   margin: 0 1rem 2rem 1rem;
 }
 
-strong {
-  font-weight: bold;
-}
-
-.tablecontainer {
+div.tablecontainer {
   margin: 0 1rem;
 }
 
-.menu {
+table.menu {
   max-width: 45rem;
   width: 90%;
   margin: 2rem auto 0 auto;
 }
 
-.menutitle {
+th.menutitle {
   font-family: 'Playball', Helvetica, sans-serif;
   font-size: 2.5rem;
-  color: hsl(var(--hlColor));
+  color: hsl(var(--strongOrange));
   padding: 1rem 0 1rem 0;
 }
 
-.nomepizza {
+td.nomepizza {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: hsl(var(--textColor));
+  color: hsl(var(--blacklight20));
   padding-right: 0.2rem;
 }
 
-.prezzopizza {
+td.prezzopizza {
   font-family: 'Roboto';
   font-size: 1.5rem;
-  color: hsl(var(--textColor));
+  color: hsl(var(--blacklight20));
   white-space: nowrap;  /*impedisco il wrap sullo spazio tra prezzo e €*/
   text-align: right;
 }
 
-.descpizza {
+td.descpizza {
   font-family: 'Roboto', cursive;
   font-size: 1rem;
   font-weight: 300;
@@ -218,11 +232,12 @@ strong {
   width: 100%;
 }
 
+/*---Dove Siamo---*/
 /*Div supplementare che nasconde il padding in eccesso
   derivato dal padding-hack usato per mantenere
   l'aspect-ratio dell'i-frame.
   Definisco qui max-height&width per centrare l'iframe*/
-.overflowmanager {
+div.overflowmanager {
   max-width: 45rem;
   max-height: 34rem;
   overflow: hidden;
@@ -231,108 +246,102 @@ strong {
 
 /*Div per padding-hack.
   Il padding % si riferisce alla width del .framecontainer*/
-.framecontainer {
-  position: relative;
+div.framecontainer {
+  position: relative; /*necessario per position:absolute del child iframe*/
   padding-top: 75%;
 }
 
-iframe {
+iframe.vecchiamap {
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  border: 2px solid hsl(var(--hlColor));
+  border: 2px solid hsl(var(--strongOrange));
   border-radius: 1rem;
   width: 100%;
   height: 100%;
   max-height: 34rem;
 }
 
-address {
-  font-family: 'Roboto', serif;
-  font-size: 1.5rem;
-}
-
-.indirizzo {
+p.indirizzo {
   max-width: 45rem;
   margin: 2rem auto;
 }
 
-em {
-  font-style: italic;
-}
-
+/*footer*/
 footer {
-  background-color: hsla(var(--hlColor), 0.6);
-  border-top: 1px solid hsla(var(--textColor), 0.6);
+  background-color: hsla(var(--strongOrange), 0.6);
+  border-top: 1px solid hsla(var(--blacklight20), 0.6);
 }
 
-.footersection {
+div.footersection {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0.2rem 0;
 }
 
-.footerlogo {
+img.footerlogo {
   width: 8rem;
   margin: 0 2rem;
 }
 
-.totop {
+a.totop {
   margin: 0 2rem;
 }
 
-.footerlink {
+a.footerlink {
   text-decoration: underline;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
-  color: hsl(var(--textColor));
+  color: hsl(var(--blacklight20));
   white-space: nowrap;
 }
 
-.footerlink:hover {
+a.footerlink:hover {
   color: hsla(var(--white), 0.6);
 }
 
-.contactinfo {
+address.contactinfo {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
-  color: hsl(var(--textColor));
+  color: hsl(var(--blacklight20));
   line-height: 2rem;
   margin: 0 2rem;
 }
 
-.footerhr {
+hr.footerhr {
   width: 99%;
   border-top: 1px solid hsla(var(--white), 0.8);
   border-bottom: 0;
   margin: 0;
 }
 
-.social {
+div.social {
   margin: 0 2rem;
 }
 
-.socialline {
+p.socialline {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
-  color: hsl(var(--textColor));
+  color: hsl(var(--blacklight20));
 }
 
-.logosocial {
+img.logosocial {
   position: relative;
   top: 0.3rem;
 }
 
-.cr{
+p.cr{
   font-size: 0.8rem;
-  color: hsl(var(--textColor));
+  color: hsl(var(--blacklight20));
   padding: 0.3rem 0.2rem;
 }
 
+/*---Media Queries*/
+/*Desktop and tablet*/
 @media only screen and (min-device-width: 800px) {
   html {
     min-width: 800px;
@@ -343,8 +352,8 @@ footer {
   }
 }
 
+/*Tablets*/
 @media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
-
   .navitemdesc {
     font-size: 1.2rem;
   }
@@ -359,6 +368,7 @@ footer {
   }
 }
 
+/*Mobile*/
 @media only screen and (max-device-width: 480px) and (orientation: portrait){
   section {
     width: 80%;
