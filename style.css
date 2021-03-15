@@ -98,14 +98,14 @@ nav {
   margin-right: 1%;
 }
 
-.logonav {
+img.logonav {
   display: block;
   height: 4rem;  /*This is implicitly setting the height of the nav*/
   margin-left: 1%;
   background: radial-gradient(circle, hsla(0, 0%, 100%,0.3),transparent 80%);
 }
 
-.navitem {
+a.navitem {
   text-decoration: none;
   color: hsla(var(--white), 0.7);
   border: 1px solid hsla(var(--white), 0.7);
@@ -114,37 +114,37 @@ nav {
   margin: 0.1rem 0.1rem;
 }
 
-.navitemdesc {
+p.navitemdesc {
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   white-space: nowrap; /*Doesn't allow text to wrap, setting a min-width implicitly*/
 }
 
-.menuicon {
+svg.menuicon {
   position: relative;
   top: 2px; /*Aligns icons with text*/
   fill: hsla(var(--white), 0.7);
 }
 
-.navitem:hover {
+a.navitem:hover {
   color: hsl(var(--blacklight10));
   border-color: hsl(var(--blacklight10));
 }
 
-.navitem:hover .menuicon {
+a.navitem:hover .menuicon {
   fill: hsl(var(--blacklight10));
 }
 
 /*---Manifest---*/
-.logotop {
+img.logotop {
   display: block;
   width:100%;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.manifestdesc {
+h2.manifestdesc {
   font-family: 'Playball', Helvetica, sans-serif;
   text-align: center;
   color: hsl(var(--blacklight20));
