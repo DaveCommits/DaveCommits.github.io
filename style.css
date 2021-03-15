@@ -1,3 +1,8 @@
+/*Code concerns:
+  -I might have used too much specificity when referring to classes
+  -:root might be replaced with a simpler html
+  -vars could be rephrased to be more semantic
+
 /*---Global styles---*/
 :root {
   text-size-adjust: none; /*block mobile devices trying to auto adjust text-size*/
