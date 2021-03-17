@@ -121,14 +121,20 @@ div.galleria2019 {
   background-color: hsla(var(--lightOrange), 0.7);
 }
 
-div.imagecontainer {
-  position: relative;
+div.lvl1container {
+  /* position: relative;
   padding-top: 75%;
-  overflow: hidden;
+  overflow: hidden; */
   /* transition: all 1s linear; */
 }
 
-div.imagecontainer img {
+div.lvl2container {
+  position: relative;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+div.lvl2container img {
   position: absolute;
   top: 0;
   width: 100%;
@@ -138,25 +144,35 @@ div.ghost {
   display:none;
 }
 
-div.imagecontainer:focus{
+div.lvl1container:focus{
   position: fixed;
-  width: 50%;
-  padding-top: 37.5%;
-  top: 5%;
-  left: 25%;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
   z-index: 1;
+  background-color: hsla(var(--blacklight20), 0.7);
 }
 
-div.imagecontainer:focus div.ghost{
+div.lvl1container:focus div.ghost{
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
-div.imagecontainer:focus img {
+div.lvl1container:focus div.lvl2container {
+  position: absolute;
+  width: 50%;
+  padding-top: 37.5%;
+  border: 0.2rem solid hsl(var(--strongOrange));
+  top: 10vh;
+  left: 25%;
+}
+
+div.lvl1container:focus img {
   position: absolute;
   top: 0;
 }
