@@ -1,3 +1,4 @@
+<<<<<<< current
 /*---Global Styles--*/
 :root {
   text-size-adjust: none; /*block mobile devices trying to auto adjust text-size*/
@@ -176,3 +177,183 @@ div.lvl1container:focus img {
   position: absolute;
   top: 0;
 }
+=======
+/*---Global Styles--*/
+:root {
+  text-size-adjust: none; /*block mobile devices trying to auto adjust text-size*/
+  --similKhaki: 61, 80%, 90%;
+  --lightOrange: 44, 99%, 65%;
+  --secColor: 33, 100%, 56%;
+  --strongOrange: 26, 98%, 47%;
+  --blacklight10: 0, 0%, 10%;
+  --blacklight20: 0, 0%, 20%;
+  --footerColor: 166, 17%, 72%;
+  --white: 0, 0%, 100%;
+}
+
+body {
+  background-color: hsl(var(--lightOrange));
+  background-image: linear-gradient(to right, hsl(var(--lightOrange)),
+    hsl(var(--similKhaki)) 10% 90%, hsl(var(--lightOrange)));
+}
+
+section {
+  width: 70%;
+  max-width: 2400px;
+  margin: 0 auto;
+  background-color: hsl(var(--similKhaki));
+  padding: 4.5rem 0; /*making space for navbar and giving space at section start*/
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.sectiontitle {
+  font-family: 'Playball', Helvetica, sans-serif;
+  text-align: center;
+  color: hsl(var(--blacklight10));
+  margin-bottom: 2rem;
+}
+
+/*---Navigation---*/
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: hsla(var(--strongOrange), 0.6);
+  border-bottom: 1px solid hsla(var(--white), 0.8);
+}
+
+header:hover,
+header:hover nav a,
+header:hover nav a svg{
+  background-color: hsl(var(--strongOrange));
+  color: white;
+  border-color: white;
+  fill: white;
+  transition: all 400ms ease-out;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+
+img.logonav {
+  display: block;
+  height: 4rem;  /*This is implicitly setting the height of the nav*/
+  margin-left: 1%;
+  background: radial-gradient(circle, hsla(0, 0%, 100%,0.3),transparent 80%);
+}
+
+a.navitem {
+  text-decoration: none;
+  color: hsla(var(--white), 0.7);
+  border: 1px solid hsla(var(--white), 0.7);
+  border-radius: 3px;
+  padding: 0.2rem 0.8rem;
+  margin: 0.1rem 0.1rem;
+}
+
+p.navitemdesc {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  white-space: nowrap; /*Doesn't allow text to wrap, setting a min-width implicitly*/
+}
+
+svg.menuicon {
+  position: relative;
+  top: 2px; /*Aligns icons with text*/
+  fill: hsla(var(--white), 0.7);
+}
+
+a.navitem:hover {
+  color: hsl(var(--blacklight10));
+  border-color: hsl(var(--blacklight10));
+}
+
+a.navitem:hover .menuicon {
+  fill: hsl(var(--blacklight10));
+}
+
+/*---Gallery---*/
+div.galleria2019 {
+  display: grid;
+  grid-template-columns: repeat(12,minmax(16rem, auto));
+  grid-template-rows: minmax(12rem, auto);
+  column-gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  border-left: 0.5rem solid hsl(var(--strongOrange));
+  border-right: 0.5rem solid hsl(var(--strongOrange));
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  background-color: hsla(var(--lightOrange), 0.7);
+}
+
+div.lvl1container {
+  /* position: relative;
+  padding-top: 75%;
+  overflow: hidden; */
+  /* transition: all 1s linear; */
+}
+
+div.lvl2container {
+  position: relative;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+div.lvl2container img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+div.ghost {
+  display:none;
+}
+
+div.lvl1container:focus{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: hsla(var(--blacklight20), 0.7);
+}
+
+div.lvl1container:focus div.ghost{
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+div.lvl1container:focus div.lvl2container {
+  position: absolute;
+  width: 50%;
+  padding-top: 37.5%;
+  border: 0.2rem solid hsl(var(--strongOrange));
+  top: 10vh;
+  left: 25%;
+}
+
+div.lvl1container:focus img {
+  position: absolute;
+  top: 0;
+}
+>>>>>>> before discard
