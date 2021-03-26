@@ -121,6 +121,7 @@ div.sliderNav .radioLabel{
   margin: 1rem 2rem;
   border: 0.2rem solid hsl(var(--strongOrange));
   border-radius: 37.5% 62.5% 37.5% 62.5%;
+  background: hsl(var(--lightOrange));
   overflow: hidden;
 }
 
@@ -148,4 +149,13 @@ div.sliderNav .radioLabel img {
 
 #radio5:checked~.mantainRatio {
   left: -33.36%;
+}
+
+/*Mobile*/
+@media only screen and (max-device-width: 480px) and (orientation: portrait){
+  section {
+    width: 100%;
+    background-color: transparent;
+  }
+
 }
