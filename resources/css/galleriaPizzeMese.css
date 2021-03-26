@@ -1,0 +1,151 @@
+
+/*---Global styles---*/
+:root {
+  text-size-adjust: none; /*block mobile devices trying to auto adjust text-size*/
+  --similKhaki: 61, 80%, 90%;
+  --lightOrange: 44, 99%, 65%;
+  --secColor: 33, 100%, 56%;
+  --strongOrange: 26, 98%, 47%;
+  --blacklight10: 0, 0%, 10%;
+  --blacklight20: 0, 0%, 20%;
+  --footerColor: 166, 17%, 72%;
+  --white: 0, 0%, 100%;
+}
+
+body {
+  background-color: hsl(var(--lightOrange));
+  background-image: linear-gradient(to right, hsl(var(--lightOrange)),
+    hsl(var(--similKhaki)) 10% 90%, hsl(var(--lightOrange)));
+}
+
+section {
+  width: 70%;
+  max-width: 2400px;
+  margin: 0 auto;
+  background-color: hsl(var(--similKhaki));
+  padding: 4.5rem 0; /*making space for navbar and giving space at section start*/
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: 'Roboto', serif;
+  font-size: 1.5rem;
+}
+
+address {
+  font-family: 'Roboto', serif;
+  font-size: 1.5rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+hr.mainhr {
+  width: 70%;
+  max-width: 2400px;
+  border-top: 0.2rem solid hsl(var(--strongOrange));
+  border-bottom: 0;
+  margin: 0.2rem auto;
+}
+
+.sectiontitle {
+  font-family: 'Playball', Helvetica, sans-serif;
+  text-align: center;
+  color: hsl(var(--blacklight10));
+  margin-bottom: 2rem;
+}
+
+/*--- Layout Galleria ---*/
+
+div.slider {
+  width: 100%;
+  overflow-x: hidden;
+  border: 0.2rem solid hsla(var(--blacklight20), 0.5);
+  border-radius: 0.5rem;
+}
+
+div.display {
+  width: 1200%;
+  display: flex;
+}
+
+div.mantainRatio {
+  box-sizing: border-box;
+  background: hsl(var(--strongOrange));
+  border: 0.2rem solid hsl(var(--strongOrange));
+  border-radius: 0.5rem;
+  width: 8.34%;
+  position: relative;
+  padding-top: calc(6.21% - 0.4rem);
+  transition: left 1s ease-out 0s;
+  overflow: hidden;
+}
+
+div.mantainRatio img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+div.display input {
+  display:none;
+}
+
+div.sliderNav {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+div.sliderNav .radioLabel{
+  flex-basis: 20%;
+  flex-shrink: 0;
+  position: relative;
+  padding-top: 14%;
+  margin: 1rem 2rem;
+  border: 0.2rem solid hsl(var(--strongOrange));
+  border-radius: 37.5% 62.5% 37.5% 62.5%;
+  overflow: hidden;
+}
+
+div.sliderNav .radioLabel img {
+  position: absolute;
+  top:0;
+  width: 100%;
+}
+
+#radio1:checked~.mantainRatio {
+  left: 0;
+}
+
+#radio2:checked~.mantainRatio {
+  left: -8.34%;
+}
+
+#radio3:checked~.mantainRatio {
+  left: -16.68%;
+}
+
+#radio4:checked~.mantainRatio {
+  left: -25.02%;
+}
+
+#radio5:checked~.mantainRatio {
+  left: -33.36%;
+}
