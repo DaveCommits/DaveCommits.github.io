@@ -76,8 +76,8 @@ hr.mainhr {
 div.slider {
   width: 100%;
   overflow-x: hidden;
-  border: 0.2rem solid hsla(var(--blacklight20), 0.5);
-  border-radius: 0.5rem;
+  /* border: 0.2rem solid hsla(var(--blacklight20), 0.5);
+  border-radius: 0.5rem; */
 }
 
 div.display {
@@ -108,20 +108,66 @@ div.display input {
 }
 
 div.sliderNav {
+  position: relative;
   width: 100%;
   display: flex;
   overflow-x: auto;
 }
 
+/* Works on Firefox */
+div.sliderNav {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+div.sliderNav::-webkit-scrollbar {
+  height: 0.8rem;
+}
+
+div.sliderNav::-webkit-scrollbar-track {
+  background: hsla(var(--lightOrange), 0.5);
+  border-radius: 0.2rem;
+}
+
+div.sliderNav::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--strongOrange));
+  border-radius: 20px;
+}
+
+div.sliderNav::before {
+  content: "";
+  position: sticky;
+  left: 0;
+  display: block;
+  flex: 0 0 20%;
+  padding-top: calc(15% + 2rem);
+  background-image: linear-gradient(to right, hsl(var(--similKhaki)) 10%, transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+div.sliderNav::after {
+  content: "";
+  position: sticky;
+  right: 0;
+  display: block;
+  flex: 0 0 20%;
+  padding-top: calc(15% + 2rem);
+  background-image: linear-gradient(to left, hsl(var(--similKhaki)) 10%, transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
 div.sliderNav .radioLabel{
-  flex-basis: 20%;
-  flex-shrink: 0;
+  box-sizing: border-box;
+  flex: 0 0 20%;
   position: relative;
-  padding-top: 14%;
+  left: -10%;  /* Sets the first thumbnail partially under ::before's transparency*/
+  padding-top: calc(15% - 0.4rem);
   margin: 1rem 2rem;
   border: 0.2rem solid hsl(var(--strongOrange));
   border-radius: 37.5% 62.5% 37.5% 62.5%;
-  background: hsl(var(--lightOrange));
   overflow: hidden;
 }
 
@@ -136,21 +182,48 @@ div.sliderNav .radioLabel img {
 }
 
 #radio2:checked~.mantainRatio {
-  left: -8.34%;
+  left: -8.33%;
 }
 
 #radio3:checked~.mantainRatio {
-  left: -16.68%;
+  left: -16.66%;
 }
 
 #radio4:checked~.mantainRatio {
-  left: -25.02%;
+  left: -25.00%;
 }
 
 #radio5:checked~.mantainRatio {
-  left: -33.36%;
+  left: -33.33%;
 }
 
+#radio6:checked~.mantainRatio {
+  left: -41.66%;
+}
+
+#radio7:checked~.mantainRatio {
+  left: -50.00%;
+}
+
+#radio8:checked~.mantainRatio {
+  left: -58.33%;
+}
+
+#radio9:checked~.mantainRatio {
+  left: -66.66%;
+}
+
+#radio10:checked~.mantainRatio {
+  left: -75.00%;
+}
+
+#radio11:checked~.mantainRatio {
+  left: -83.33%;
+}
+
+#radio12:checked~.mantainRatio {
+  left: -91.66%;
+}
 /*Mobile*/
 @media only screen and (max-device-width: 480px) and (orientation: portrait){
   section {
