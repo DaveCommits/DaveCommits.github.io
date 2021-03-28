@@ -76,8 +76,6 @@ hr.mainhr {
 div.slider {
   width: 100%;
   overflow-x: hidden;
-  /* border: 0.2rem solid hsla(var(--blacklight20), 0.5);
-  border-radius: 0.5rem; */
 }
 
 div.display {
@@ -103,7 +101,34 @@ div.mantainRatio img {
   width: 100%;
 }
 
-div.display input {
+div.mantainRatio input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 5%;
+  z-index: 2;
+}
+
+div.mantainRatio .listaIngr {
+  position: absolute;
+  top: -1000px;
+  width: 100%;
+  text-align: center;
+  background-color: hsla(var(--white), 0.5);
+  opacity: 0;
+  transition: opacity 1.2s linear 0s,
+    top 0.8s ease-in-out 0s;
+  margin: 0;
+  z-index: 1;
+}
+
+div.mantainRatio input:checked~.listaIngr {
+  top: 0;
+  opacity: 1;
+}
+
+div.display input[type="radio"] {
   display:none;
 }
 
@@ -117,7 +142,7 @@ div.sliderNav {
 /* Works on Firefox */
 div.sliderNav {
   scrollbar-width: thin;
-  scrollbar-color: blue orange;
+  scrollbar-color: hsla(var(--lightOrange), 0.5) hsl(var(--strongOrange));
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -132,7 +157,7 @@ div.sliderNav::-webkit-scrollbar-track {
 
 div.sliderNav::-webkit-scrollbar-thumb {
   background-color: hsl(var(--strongOrange));
-  border-radius: 20px;
+  border-radius: 0.2rem;
 }
 
 div.sliderNav::before {
@@ -165,7 +190,7 @@ div.sliderNav .radioLabel{
   position: relative;
   left: -10%;  /* Sets the first thumbnail partially under ::before's transparency*/
   padding-top: calc(15% - 0.4rem);
-  margin: 1rem 2rem;
+  margin: 1rem 2%;
   border: 0.2rem solid hsl(var(--strongOrange));
   border-radius: 37.5% 62.5% 37.5% 62.5%;
   overflow: hidden;
