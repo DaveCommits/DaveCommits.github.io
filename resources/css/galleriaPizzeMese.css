@@ -280,10 +280,10 @@ div.sliderNav .radioLabel img {
   }
 
   div.sliderNav::before {
-    background-image: linear-gradient(to right, hsl(var(--lightOrange)) 10%, transparent);
+    background-image: linear-gradient(to right, hsl(var(--lightOrange)), transparent 10%);
   }
 
   div.sliderNav::after {
-    background-image: linear-gradient(to left, hsl(var(--lightOrange)) 10%, transparent);
+    background-image: linear-gradient(to left, hsl(var(--lightOrange)), transparent 10%);
   }
 }
