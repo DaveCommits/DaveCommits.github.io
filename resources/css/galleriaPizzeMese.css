@@ -88,7 +88,7 @@ div.mantainRatio {
   background: hsl(var(--strongOrange));
   border: 0.2rem solid hsl(var(--strongOrange));
   border-radius: 0.5rem;
-  width: 8.34%;
+  width: 8.3333%;
   position: relative;
   padding-top: calc(6.21% - 0.4rem);
   transition: left 1s ease-out 0s;
@@ -101,21 +101,34 @@ div.mantainRatio img {
   width: 100%;
 }
 
-div.mantainRatio input {
+div.mantainRatio label {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 10%;
-  height: 5%;
+  top: 5%;
+  right: 5%;
+  width: 5%;
+  height: 6.6667%; /*Dependant on the div's w/h ratio*/
+  background-image: url("./../images/svg/help_orange_white_24dp.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.3s ease-in 0s;
   z-index: 2;
+}
+
+div.mantainRatio label img {
+  width:100%;
 }
 
 div.mantainRatio .listaIngr {
   position: absolute;
-  top: -1000px;
+  top: -100%;
   width: 100%;
-  text-align: center;
-  background-color: hsla(var(--white), 0.5);
+  padding-left: 10%;
+  background-color: hsla(var(--lightOrange), 0.5);
+  border-bottom: hsl(var(--strongOrange)) solid 0.2rem;
+  color: hsl(var(--blacklight10));
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
   opacity: 0;
   transition: opacity 1.2s linear 0s,
     top 0.8s ease-in-out 0s;
@@ -128,7 +141,11 @@ div.mantainRatio input:checked~.listaIngr {
   opacity: 1;
 }
 
-div.display input[type="radio"] {
+div.mantainRatio input:checked+.checkLabel {
+  background-image: url("./../images/svg/cross_orange_white_24dp.svg");
+}
+
+div.display input {
   display:none;
 }
 
