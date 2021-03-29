@@ -266,6 +266,7 @@ div.sliderNav .radioLabel img {
 #radio12:checked~.mantainRatio {
   left: -91.66%;
 }
+
 /*Mobile*/
 @media only screen and (max-device-width: 480px) and (orientation: portrait){
   section {
@@ -276,7 +277,7 @@ div.sliderNav .radioLabel img {
   div.mantainRatio label {
     width: 10%;
     height: 13.3334%;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   div.sliderNav::before {
