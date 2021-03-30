@@ -83,6 +83,10 @@ div.display {
   display: flex;
 }
 
+div .display.y2018 {
+  width: 200%;
+}
+
 div.mantainRatio {
   box-sizing: border-box;
   background: hsl(var(--strongOrange));
@@ -93,6 +97,11 @@ div.mantainRatio {
   padding-top: calc(6.21% - 0.4rem);
   transition: left 1s ease-out 0s;
   overflow: hidden;
+}
+
+div .mantainRatio.y2018{
+  width: 50%;
+  padding-top: calc(37.5% - 0.4rem);
 }
 
 div.mantainRatio img {
@@ -156,6 +165,10 @@ div.sliderNav {
   overflow-x: auto;
 }
 
+div .sliderNav.y2018 {
+  justify-content: space-around;
+}
+
 /* Works on Firefox */
 div.sliderNav {
   scrollbar-width: thin;
@@ -213,6 +226,10 @@ div.sliderNav .radioLabel{
   overflow: hidden;
 }
 
+div .sliderNav.y2018 .radioLabel {
+  left: 0;
+}
+
 div.sliderNav .radioLabel img {
   position: absolute;
   top:0;
@@ -265,6 +282,14 @@ div.sliderNav .radioLabel img {
 
 #radio12:checked~.mantainRatio {
   left: -91.66%;
+}
+
+#radio1y2018:checked~.mantainRatio {
+  left: 0;
+}
+
+#radio2y2018:checked~.mantainRatio {
+  left: -50%;
 }
 
 /*Mobile*/
