@@ -123,7 +123,7 @@ div.mantainRatio .listaIngr {
   top: -100%;
   width: 100%;
   padding-left: 10%;
-  background-color: hsla(var(--lightOrange), 0.5);
+  background-color: hsla(var(--lightOrange), 0.8);
   border-bottom: hsl(var(--strongOrange)) solid 0.2rem;
   color: hsl(var(--blacklight10));
   font-family: 'Roboto', sans-serif;
@@ -281,10 +281,10 @@ div.sliderNav .radioLabel img {
   }
 
   div.sliderNav::before {
-    background-image: linear-gradient(to right, hsl(var(--lightOrange)), transparent 10%);
+    background-image: linear-gradient(to right, hsl(var(--lightOrange)), transparent 15%);
   }
 
   div.sliderNav::after {
-    background-image: linear-gradient(to left, hsl(var(--lightOrange)), transparent 10%);
+    background-image: linear-gradient(to left, hsl(var(--lightOrange)), transparent 15%);
   }
 }
