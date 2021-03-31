@@ -81,6 +81,7 @@ div.slider {
 div.display {
   width: 1200%;
   display: flex;
+  transition: transform 1s ease-out 0s;
 }
 
 div .display.y2018 {
@@ -95,7 +96,6 @@ div.mantainRatio {
   width: 8.3333%;
   position: relative;
   padding-top: calc(6.21% - 0.4rem);
-  transition: left 1s ease-out 0s;
   overflow: hidden;
 }
 
@@ -108,6 +108,7 @@ div.mantainRatio img {
   position: absolute;
   top: 0;
   width: 100%;
+  pointer-events: none;
 }
 
 div.mantainRatio label {
@@ -154,7 +155,7 @@ div.mantainRatio input:checked+.checkLabel {
   background-image: url("./../images/svg/cross_orange_white_24dp.svg");
 }
 
-div.display input {
+div.slider input {
   display:none;
 }
 
@@ -236,60 +237,60 @@ div.sliderNav .radioLabel img {
   width: 100%;
 }
 
-#radio1:checked~.mantainRatio {
-  left: 0;
+#radio1:checked~.display {
+  transform: translate(0);
 }
 
-#radio2:checked~.mantainRatio {
-  left: -8.33%;
+#radio2:checked~.display {
+  transform: translate(-8.33%);
 }
 
-#radio3:checked~.mantainRatio {
-  left: -16.66%;
+#radio3:checked~.display {
+  transform: translate(-16.66%);
 }
 
-#radio4:checked~.mantainRatio {
-  left: -25.00%;
+#radio4:checked~.display {
+  transform: translate(-25.00%);
 }
 
-#radio5:checked~.mantainRatio {
-  left: -33.33%;
+#radio5:checked~.display {
+  transform: translate(-33.33%);
 }
 
-#radio6:checked~.mantainRatio {
-  left: -41.66%;
+#radio6:checked~.display {
+  transform: translate(-41.66%);
 }
 
-#radio7:checked~.mantainRatio {
-  left: -50.00%;
+#radio7:checked~.display {
+  transform: translate(-50.00%);
 }
 
-#radio8:checked~.mantainRatio {
-  left: -58.33%;
+#radio8:checked~.display {
+  transform: translate(-58.33%);
 }
 
-#radio9:checked~.mantainRatio {
-  left: -66.66%;
+#radio9:checked~.display {
+  transform: translate(-66.66%);
 }
 
-#radio10:checked~.mantainRatio {
-  left: -75.00%;
+#radio10:checked~.display {
+  transform: translate(-75.00%);
 }
 
-#radio11:checked~.mantainRatio {
-  left: -83.33%;
+#radio11:checked~.display {
+  transform: translate(-83.33%);
 }
 
-#radio12:checked~.mantainRatio {
-  left: -91.66%;
+#radio12:checked~.display {
+  transform: translate(-91.66%);
 }
 
-#radio1y2018:checked~.mantainRatio {
-  left: 0;
+#radio1y2018:checked~.display {
+  transform: translate(0);
 }
 
-#radio2y2018:checked~.mantainRatio {
-  left: -50%;
+#radio2y2018:checked~.display {
+  transform: translate(-50%);
 }
 
 /*Mobile*/
