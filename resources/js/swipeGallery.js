@@ -31,8 +31,15 @@ function move(e) {
   }
 };
 
+const display2020 = document.getElementsByClassName("display y2020")[0];
 const display2019 = document.getElementsByClassName("display y2019")[0];
 const display2018 = document.getElementsByClassName("display y2018")[0];
+
+display2020.addEventListener('mousedown', lock, false);
+display2020.addEventListener('touchstart', lock, false);
+
+display2020.addEventListener('mouseup', move, false);
+display2020.addEventListener('touchend', move, false);
 
 display2019.addEventListener('mousedown', lock, false);
 display2019.addEventListener('touchstart', lock, false);
