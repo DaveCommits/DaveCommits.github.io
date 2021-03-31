@@ -1,6 +1,8 @@
 let radioGroup2019 = document.getElementsByName("radio-btn2019");
 
 const display2019 = document.getElementById("display2019");
+const w = window.innerWidth;
+
 const N = display2019.children.length;
 
 function unify(e) { return e.changedTouches ? e.changedTouches[0] : e };
@@ -23,8 +25,8 @@ function move(e) {
   if(x0 || x0 === 0) {
     let dx = unify(e).clientX - x0, s = Math.sign(dx);
     radio2019Selected();
-
-    if((i > 0 || s < 0) && (i < N - 1 || s > 0)){
+    console.log(dx*s/w);
+    if((i > 0 || s < 0) && (i < N - 1 || s > 0) && ((dx*s/w) > 0.2)){
         i-=s;
         radioGroup2019[i].checked = true;
     }
