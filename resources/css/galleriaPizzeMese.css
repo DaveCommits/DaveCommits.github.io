@@ -237,51 +237,51 @@ div.sliderNav .radioLabel img {
   width: 100%;
 }
 
-#radio1:checked~.display {
+#radio1y2019:checked~.display {
   transform: translate(0);
 }
 
-#radio2:checked~.display {
+#radio2y2019:checked~.display {
   transform: translate(-8.33%);
 }
 
-#radio3:checked~.display {
+#radio3y2019:checked~.display {
   transform: translate(-16.66%);
 }
 
-#radio4:checked~.display {
+#radio4y2019:checked~.display {
   transform: translate(-25.00%);
 }
 
-#radio5:checked~.display {
+#radio5y2019:checked~.display {
   transform: translate(-33.33%);
 }
 
-#radio6:checked~.display {
+#radio6y2019:checked~.display {
   transform: translate(-41.66%);
 }
 
-#radio7:checked~.display {
+#radio7y2019:checked~.display {
   transform: translate(-50.00%);
 }
 
-#radio8:checked~.display {
+#radio8y2019:checked~.display {
   transform: translate(-58.33%);
 }
 
-#radio9:checked~.display {
+#radio9y2019:checked~.display {
   transform: translate(-66.66%);
 }
 
-#radio10:checked~.display {
+#radio10y2019:checked~.display {
   transform: translate(-75.00%);
 }
 
-#radio11:checked~.display {
+#radio11y2019:checked~.display {
   transform: translate(-83.33%);
 }
 
-#radio12:checked~.display {
+#radio12y2019:checked~.display {
   transform: translate(-91.66%);
 }
 
