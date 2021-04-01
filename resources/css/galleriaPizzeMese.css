@@ -88,6 +88,10 @@ div .display.y2018 {
   width: 200%;
 }
 
+div .display.y2021{
+  width: 400%;
+}
+
 div.mantainRatio {
   box-sizing: border-box;
   background: hsl(var(--strongOrange));
@@ -102,6 +106,11 @@ div.mantainRatio {
 div .mantainRatio.y2018{
   width: 50%;
   padding-top: calc(37.5% - 0.4rem);
+}
+
+div .mantainRatio.y2021{
+  width: 25%;
+  padding-top: calc(18.75% - 0.4rem);
 }
 
 div.mantainRatio img {
@@ -303,6 +312,22 @@ div.sliderNav .radioLabel img {
 
 #radio2y2018:checked~.display {
   transform: translate(-50%);
+}
+
+#radio1y2021:checked~.display {
+  transform: translate(0);
+}
+
+#radio2y2021:checked~.display {
+  transform: translate(-25%);
+}
+
+#radio3y2021:checked~.display {
+  transform: translate(-50%);
+}
+
+#radio4y2021:checked~.display {
+  transform: translate(-75%);
 }
 
 /*Mobile*/

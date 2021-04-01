@@ -31,9 +31,16 @@ function move(e) {
   }
 };
 
+const display2021 = document.getElementsByClassName("display y2021")[0];
 const display2020 = document.getElementsByClassName("display y2020")[0];
 const display2019 = document.getElementsByClassName("display y2019")[0];
 const display2018 = document.getElementsByClassName("display y2018")[0];
+
+display2021.addEventListener('mousedown', lock, false);
+display2021.addEventListener('touchstart', lock, false);
+
+display2021.addEventListener('mouseup', move, false);
+display2021.addEventListener('touchend', move, false);
 
 display2020.addEventListener('mousedown', lock, false);
 display2020.addEventListener('touchstart', lock, false);
