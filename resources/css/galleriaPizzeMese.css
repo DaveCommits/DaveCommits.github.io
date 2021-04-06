@@ -75,10 +75,21 @@ hr.mainhr {
   text-shadow: 0.2rem 0.2rem hsla(var(--blacklight20), 0.5);
 }
 
+.disclaimer {
+  width: 70%;
+  border: 0.2rem solid red;
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
 /*--- Layout Galleria ---*/
 
 div.slider {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 
@@ -207,7 +218,7 @@ div.sliderNav::-webkit-scrollbar-thumb {
 div.sliderNav::before {
   content: "";
   position: sticky;
-  left: 0;
+  left: -0.1rem;
   display: block;
   flex: 0 0 20%;
   padding-top: calc(15% + 2rem);
@@ -219,7 +230,7 @@ div.sliderNav::before {
 div.sliderNav::after {
   content: "";
   position: sticky;
-  right: 0;
+  right: -0.1rem;
   display: block;
   flex: 0 0 20%;
   padding-top: calc(15% + 2rem);
@@ -339,6 +350,10 @@ div.sliderNav .radioLabel img {
   section {
     width: 100%;
     background-color: transparent;
+  }
+
+  div.slider {
+    width: 100%;
   }
 
   div.mantainRatio label {
