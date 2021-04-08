@@ -323,7 +323,6 @@ footer li:not(:last-child){
   #banner .container {
     margin: 0 16px;
     padding-bottom: 32px;
-    text-align: center;
   }
 
   h1 {
@@ -368,12 +367,12 @@ footer li:not(:last-child){
   }
 
   #information .rightSection:last-of-type {
-    background-color: none;
+    background-color: transparent;
   }
 
   /*--Courses--*/
   #courses {
-    background-color: none;
+    background-color: initial;
   }
 
   #courses h2 {
@@ -395,6 +394,7 @@ footer li:not(:last-child){
     background-color: #ddd;
     margin-bottom: 8px;
     margin-right: 0;
+    text-align: center;
   }
 
   .course:last-child {
@@ -412,5 +412,36 @@ footer li:not(:last-child){
   }
 
   /*--Thesis--*/
+  #thesis h2 {
+    padding: 32px 0;
+    padding-bottom: 16px;
+  }
 
+  #thesis .right {
+    display: none;
+  }
+
+  #thesis .left .leftText {
+    display: none;
+  }
+
+  .left video {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  /*--Footer--*/
+  footer nav {
+    display: none;
+  }
+
+  footer {
+    display: block;
+    height: auto;
+  }
+
+  footer p {
+    margin: 16px;
+  }
 }
