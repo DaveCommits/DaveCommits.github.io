@@ -1,4 +1,5 @@
 html {
+  text-size-adjust: none;
   font-family: sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
@@ -292,6 +293,11 @@ footer li:not(:last-child){
     display: none;
   }
 
+  .mobileNav {
+    display: block;
+    width: 100%;
+  }
+
   .mobileNav ul {
     display: flex;
     height: 100%;
@@ -310,8 +316,9 @@ footer li:not(:last-child){
   }
 
   #banner .container {
-    margin: 16px 0;
+    margin: 0 16px;
     padding-bottom: 32px;
+    text-align: center;
   }
 
   h1 {
@@ -363,5 +370,34 @@ footer li:not(:last-child){
   .course img, .course h4, .course p {
     display: none;
   }
+
+  .coursesContainer {
+    margin: 0 16px;
+    flex-flow: column;
+    flex-wrap: nowrap;
+  }
+
+  .course {
+    flex-basis: 100%;
+    background-color: #ddd;
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+
+  .course:last-child {
+    margin-bottom: 32px;
+  }
+
+  .courseText {
+    margin: 0;
+    padding: 16px;
+    padding-bottom: 24px;
+  }
+
+  .courseText *{
+    margin:0;
+  }
+
+  /*--Thesis--*/
 
 }
