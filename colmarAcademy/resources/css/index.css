@@ -109,6 +109,10 @@ h3 {
   display: flex;
 }
 
+.mobileInformationImg {
+  display: none;
+}
+
 .left {
   width: 60%;
 }
@@ -296,6 +300,7 @@ footer li:not(:last-child){
   .mobileNav {
     display: block;
     width: 100%;
+    height: 64px;
   }
 
   .mobileNav ul {
@@ -343,6 +348,14 @@ footer li:not(:last-child){
 
   #information .rightSection:not(:first-child){
     margin-top: 32px;
+  }
+
+  .desktopInformationImg {
+    display: none;
+  }
+
+  .mobileInformationImg {
+    display: block;
   }
 
   #information .rightSection img {
