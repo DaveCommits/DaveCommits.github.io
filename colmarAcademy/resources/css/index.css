@@ -297,10 +297,19 @@ footer li:not(:last-child){
     display: none;
   }
 
+ header {
+   height: auto;
+ }
+
   .mobileNav {
     display: block;
     width: 100%;
-    height: 64px;
+  }
+
+  .mobileNav img {
+    padding-top: 45px;
+    padding-bottom: 20px;
+    height: 96px;
   }
 
   .mobileNav ul {
@@ -317,16 +326,32 @@ footer li:not(:last-child){
 
   #banner img {
     width: 100%;
-    margin: 0 0 32px 0;
+    margin: 0 0 64px 0;
   }
 
   #banner .container {
-    margin: 0 16px;
-    padding-bottom: 32px;
+    width: calc(100% - 128px);
+    margin: 0 64px;
+    padding-bottom: 128px;
   }
 
   h1 {
-    margin-bottom: 32px;
+    font-size: 80px;
+    margin-bottom: 80px;
+    line-height: 1.5em;
+  }
+
+  h3 {
+    font-size: 48px;
+    margin-bottom: 96px;
+    line-height: 1.5em;
+  }
+
+  .startLink {
+    font-size: 40px;
+    padding: 32px 0;
+    color: white;
+    background-color: #999;
   }
 
   /*--Information--*/
@@ -358,12 +383,28 @@ footer li:not(:last-child){
   }
 
   #information .rightSection img {
-    width: calc(100% - 32px);
+    width: calc(100% - 128px);
+    margin: 64px;
   }
 
   #information .rightSectionText {
-    width: calc(100% - 64px);
-    margin: 32px;
+    width: calc(100% - 256px);
+    margin: 0 128px;
+  }
+
+  h2 {
+    font-size: 64px;
+    margin-bottom: 48px;
+  }
+
+  p {
+    font-size: 32px;
+    line-height: 1.5em;
+    margin-bottom: 64px;
+  }
+
+  .rightSectionText a {
+    font-size: 32px;
   }
 
   #information .rightSection:last-of-type {
@@ -376,7 +417,8 @@ footer li:not(:last-child){
   }
 
   #courses h2 {
-    padding: 32px 0 16px 0;
+    font-size: 80px;
+    padding: 128px 0 64px 0;
   }
 
   .course img, .course h4, .course p {
@@ -384,7 +426,7 @@ footer li:not(:last-child){
   }
 
   .coursesContainer {
-    margin: 0 16px;
+    margin: 0 64px;
     flex-flow: column;
     flex-wrap: nowrap;
   }
@@ -392,19 +434,21 @@ footer li:not(:last-child){
   .course {
     flex-basis: 100%;
     background-color: #ddd;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+  }
+
+  .course:not(:nth-child(3n)){
     margin-right: 0;
-    text-align: center;
   }
 
   .course:last-child {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
 
   .courseText {
     margin: 0;
-    padding: 16px;
-    padding-bottom: 24px;
+    padding: 32px;
+    padding-bottom: 48px;
   }
 
   .courseText *{
@@ -413,12 +457,17 @@ footer li:not(:last-child){
 
   /*--Thesis--*/
   #thesis h2 {
-    padding: 32px 0;
-    padding-bottom: 16px;
+    font-size: 80px;
+    padding: 128px 0;
+    padding-bottom: 64px;
   }
 
   #thesis .right {
     display: none;
+  }
+
+  #thesis .left {
+    width: 100%;
   }
 
   #thesis .left .leftText {
@@ -428,7 +477,7 @@ footer li:not(:last-child){
   .left video {
     width: 100%;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
   }
 
   /*--Footer--*/
@@ -442,6 +491,7 @@ footer li:not(:last-child){
   }
 
   footer p {
-    margin: 16px;
+    font-size: 32px;
+    margin: 32px 64px;
   }
 }
