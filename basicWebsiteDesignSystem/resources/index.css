@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0;
+}
+
+section {
+  width: 80%;
+  margin: 1rem auto;
+  border: 0.2rem solid #999999;
+}
+
+h1 {
+  margin-left: calc(10% + 0.5rem);
+}
+
+h2 {
+  margin: 0.5rem;
+}
+
+.color, .font, .text-style{
+  display: inline-block;
+  min-width: 20rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  vertical-align: top;
+}
+
+.color {
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0.2rem solid #999999;
+}
+
+.similKhaki{
+  background-color: #f9fad1;
+}
+
+.lightOrange {
+  background-color: #fecf4d;
+}
+
+.strongOrange {
+  background-color: #ed6802;
+}
+
+.playball {
+  font-family: 'Playball', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', serif;
+}
+
+.text-style h1 {
+  font-family: 'Playball', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-style h2 {
+  font-family: 'Playball', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-style p {
+  font-family: 'Roboto', serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}

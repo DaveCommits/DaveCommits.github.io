@@ -2,6 +2,8 @@
   -I might have used too much specificity when referring to classes
   -:root might be replaced with a simpler html selector
   -vars could be rephrased to be more semantic
+  -I could reorded the code into "design sections" instead,
+    "page section styles" seem harder to mantain
 
 /*---Global styles---*/
 :root {
