@@ -540,6 +540,10 @@ p.cr{
     background-color: transparent;
   }
 
+  a.navitem {
+    padding: 0.1rem 0.2rem;
+  }
+
   p.navitemdesc {
     font-size: 1.2rem;
   }
