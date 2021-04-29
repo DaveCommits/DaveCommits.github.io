@@ -406,7 +406,7 @@ p.cr{
 
 /*Tablets*/
 @media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
-  a.navitemdesc {
+  p.navitemdesc {
     font-size: 1.2rem;
   }
 

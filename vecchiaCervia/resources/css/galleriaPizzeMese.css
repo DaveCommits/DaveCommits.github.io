@@ -540,6 +540,10 @@ p.cr{
     background-color: transparent;
   }
 
+  p.navitemdesc {
+    font-size: 1.2rem;
+  }
+
   div.slider {
     width: 100%;
   }
@@ -551,10 +555,28 @@ p.cr{
   }
 
   div.sliderNav::before {
-    background-image: linear-gradient(to right, hsl(var(--lightOrange)), transparent 15%);
+    background-image: linear-gradient(to right, hsl(var(--lightOrange)), transparent 20%);
   }
 
   div.sliderNav::after {
-    background-image: linear-gradient(to left, hsl(var(--lightOrange)), transparent 15%);
+    background-image: linear-gradient(to left, hsl(var(--lightOrange)), transparent 20%);
+  }
+
+  img.footerlogo {
+    margin: 0 1rem;
+  }
+
+  a.totop {
+    margin: 0 1rem;
+  }
+
+  address.contactinfo {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0 1rem;
+  }
+
+  div.social {
+    margin: 0 1rem;
   }
 }
