@@ -33,10 +33,14 @@ section {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
+  font-size: 3rem;
+}
+
+h3 {
   font-size: 2.5rem;
 }
 
@@ -85,7 +89,7 @@ header {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
-  background-color: hsla(var(--strongOrange), 0.6);
+  background-color: hsla(var(--strongOrange), 0.8);
   border-bottom: 1px solid hsla(var(--white), 0.8);
 }
 
@@ -144,6 +148,11 @@ a.navitem:hover .menuicon {
 }
 
 /*---Manifest---*/
+h1.hiddenh1{
+  position: absolute;
+  left: -9999px;
+}
+
 img.logotop {
   display: block;
   width:100%;
@@ -151,7 +160,7 @@ img.logotop {
   margin: 0 auto;
 }
 
-h2.manifestdesc {
+h3.manifestdesc {
   font-family: 'Playball', Helvetica, sans-serif;
   text-align: center;
   color: hsl(var(--blacklight20));
@@ -163,17 +172,10 @@ p.subtitle {
   color: hsl(var(--blacklight20));
 }
 
-h2.mesecorrente {
-  font-family: 'Playball', Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 1rem;
-  color: hsl(var(--blacklight10));
-}
-
 figure.pizzamesebox {
   width: 90%;
   max-width: 60rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 img.pizzamese {
@@ -188,6 +190,43 @@ figcaption.pizzamesedesc {
   font-family: 'Roboto',cursive;
   font-weight: 300;
   font-style: italic;
+  padding: 1rem 0;
+}
+
+h3.mesipassati {
+  font-family: 'Playball', Helvetica, sans-serif;
+  text-align: center;
+  color: hsla(var(--white), 0.8);
+}
+
+.sitelink {
+  display: block;
+  text-decoration: none;
+  background-color: hsla(var(--strongOrange), 0.7);
+  border: 0.2rem solid hsl(var(--strongOrange));
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  max-width: 25rem;
+  margin: 2rem auto;
+}
+
+.sitelink:hover h3{
+  color: hsla(var(--white), 1);
+}
+
+.sitelink:hover {
+  background-color: hsla(var(--strongOrange),0.9);
+}
+
+.sitelink:active h3 {
+  color: hsla(var(--white), 0.7);
+}
+
+.sitelink:active {
+  background-color: hsla(var(--strongOrange),0.5);
+  border-width: 0.15rem;
+  margin-top: 2.1rem;
+
 }
 
 /*---Menù---*/
