@@ -431,6 +431,10 @@ p.cr{
     display: none;
   }
 
+  a.sitelink {
+    max-width: 20rem;
+  }
+
   table.menu {
     width: 100%;
     max-width: none;
