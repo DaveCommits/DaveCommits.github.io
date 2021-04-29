@@ -71,6 +71,10 @@ hr.mainhr {
   margin-bottom: 2rem;
 }
 
+h1.sectiontitle {
+  margin-top: 2rem;
+}
+
 .cooltitle {
   text-shadow: 0.2rem 0.2rem hsla(var(--blacklight20), 0.5);
 }
@@ -84,6 +88,84 @@ hr.mainhr {
   text-align: center;
   margin: 0 auto;
 }
+
+
+/*---Navigation---*/
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: hsla(var(--strongOrange), 0.8);
+  border-bottom: 1px solid hsla(var(--white), 0.8);
+}
+
+header:hover,
+header:hover nav a,
+header:hover nav a svg{
+  background-color: hsl(var(--strongOrange));
+  color: white;
+  border-color: white;
+  fill: white;
+  transition: all 400ms ease-out;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+
+img.logonav {
+  display: block;
+  height: 4rem;  /*This is implicitly setting the height of the nav*/
+  /* margin-left: 1%; */
+  /* background: radial-gradient(circle, hsla(0, 0%, 100%,0.3),transparent 80%); */
+}
+
+a.navlogo.navitem{
+  display: flex;
+  border: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 1%;
+}
+
+a.navitem {
+  text-decoration: none;
+  color: hsla(var(--white), 0.7);
+  border: 1px solid hsla(var(--white), 0.7);
+  border-radius: 3px;
+  padding: 0.2rem 0.8rem;
+  margin: 0.1rem 0.1rem;
+}
+
+p.navitemdesc {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  white-space: nowrap; /*Doesn't allow text to wrap, setting a min-width implicitly*/
+}
+
+svg.menuicon {
+  position: relative;
+  top: 2px; /*Aligns icons with text*/
+  fill: hsla(var(--white), 0.7);
+}
+
+a.navitem:hover {
+  color: hsl(var(--blacklight10));
+  border-color: hsl(var(--blacklight10));
+}
+
+a.navitem:hover .menuicon {
+  fill: hsl(var(--blacklight10));
+}
+
 
 /*--- Layout Galleria ---*/
 
@@ -344,6 +426,112 @@ div.sliderNav .radioLabel img {
 /* #radio4y2021:checked~.display {
   transform: translate(#);
 } */
+
+
+/*footer*/
+footer {
+  background-color: hsla(var(--strongOrange), 0.6);
+  border-top: 1px solid hsla(var(--blacklight20), 0.6);
+}
+
+div.footersection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+
+img.footerlogo {
+  width: 8rem;
+  margin: 0 2rem;
+}
+
+a.totop {
+  margin: 0 2rem;
+}
+
+a.footerlink {
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: hsl(var(--blacklight20));
+  white-space: nowrap;
+}
+
+a.footerlink:hover {
+  color: hsla(var(--white), 0.6);
+}
+
+address.contactinfo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsl(var(--blacklight20));
+  line-height: 2rem;
+  margin: 0 2rem;
+}
+
+hr.footerhr {
+  width: 99%;
+  border-top: 1px solid hsla(var(--white), 0.8);
+  border-bottom: 0;
+  margin: 0;
+}
+
+div.social {
+  margin: 0 2rem;
+}
+
+p.socialline {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: hsl(var(--blacklight20));
+}
+
+img.logosocial {
+  position: relative;
+  top: 0.3rem;
+}
+
+p.cr{
+  font-size: 0.8rem;
+  color: hsl(var(--blacklight20));
+  padding: 0.3rem 0.2rem;
+}
+
+
+/*---Media Queries*/
+
+/*Desktop and tablet*/
+@media only screen and (min-device-width: 800px) {
+  html {
+    min-width: 800px;
+  }
+
+  header {
+    min-width: 800px;
+  }
+}
+
+
+/*Tablets*/
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+  a.navitemdesc {
+    font-size: 1.2rem;
+  }
+
+  svg.menuicon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  img.logonav {
+    height: 2.5rem;
+  }
+}
+
 
 /*Mobile*/
 @media only screen and (max-device-width: 480px) and (orientation: portrait){

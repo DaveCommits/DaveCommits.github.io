@@ -2,19 +2,48 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./resources/css/galleriaPizzeMese.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <title>La Vecchia Cervia - I mesi passati</title>
   </head>
   <body>
+    <header>
+      <a class="navitem navlogo" href="./index.html">
+        <img class="logonav" src="./resources/images/logo/VClogoFlatWhite.png" height="1213px">
+        <p>Home</p>
+      </a>
+      <nav>
+        <a class="navitem" href="#y2021">
+          <p class="navitemdesc">
+          2021
+          </p>
+        </a>
+        <a class="navitem" href="#y2020">
+          <p class="navitemdesc">
+          2020
+          </p>
+        </a>
+        <a class="navitem" href="#y2019">
+          <p class="navitemdesc">
+          2019
+          </p>
+        </a>
+        <a class="navitem" href="#y2018">
+          <p class="navitemdesc">
+          2018
+          </p>
+        </a>
+      </nav>
+    </header>
     <main>
       <section>
         <h1 class="sectiontitle">Le pizze dei mesi passati</h1>
         <p class="disclaimer">Le pizze presentate di seguito non sono più disponibili.</p>
       </section>
       <hr class="mainhr">
-      <section>
+      <section id="y2021">
         <h2 class="sectiontitle cooltitle">2021</h2>
         <div class="slider">
           <!-- radio buttons group used to control image slider -->
@@ -179,7 +208,7 @@
         </div>
       </section>
       <hr class="mainhr">
-      <section>
+      <section id="y2020">
         <h2 class="sectiontitle cooltitle">2020</h2>
         <div class="slider">
           <!-- radio buttons group used to control image slider -->
@@ -384,7 +413,7 @@
         </div>
       </section>
       <hr class="mainhr">
-      <section>
+      <section id="y2019">
         <h2 class="sectiontitle cooltitle">2019</h2>
         <div class="slider">
           <!-- radio buttons group used to control image slider -->
@@ -589,7 +618,7 @@
         </div>
       </section>
       <hr class="mainhr">
-      <section>
+      <section id="y2018">
         <h2 class="sectiontitle cooltitle">2018</h2>
         <div class="slider">
           <!-- radio buttons group used to control image slider -->
@@ -632,6 +661,34 @@
           </div>
         </div>
       </section>
+      <footer id="contatti">
+        <div class="footersection">
+          <img class="footerlogo" src="./resources/images/logo/VClogoGreyAlpha.png" alt="logo" width="1283px">
+          <a class="totop footerlink" href="#top">Torna all'inizio</a>
+        </div>
+        <hr class="footerhr">
+        <div class="footersection">
+          <address class="contactinfo">
+            Via Circonvallazione Edoardo Sacchetti 29, Cervia(RA)<br>
+            E-mail: vecchiaCervia@yahoo.it<br>
+            Telefono: <span class="nowrap">0544 974008</span><br>
+          </address>
+          <div class="social">
+            <p class="socialline">Seguici su:</p>
+            <a class="footerlink" rel="external" target="_blank" href="https://it-it.facebook.com/LaVecchiaCervia/">
+              <img class="logosocial" src="./resources/images/svg/facebook_black_24dp.svg" alt="Facebook logo">
+              Facebook
+            </a>
+            <br>
+            <a class="footerlink" rel="external" target="_blank" href="https://instagram.com/lavecchiacervia">
+              <img class="logosocial" src="./resources/images/svg/photo_camera_black_24dp.svg" alt="Instagram logo">
+              Instagram
+            </a>
+          </div>
+        </div>
+        <hr class="footerhr">
+        <p class="cr">&#169; Copyright 2021 La Vecchia Cervia</p>
+      </footer>
     </main>
   </body>
   <script src="./resources/js/swipeGallery.js"></script>

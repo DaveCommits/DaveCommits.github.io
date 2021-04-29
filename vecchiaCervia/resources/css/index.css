@@ -82,10 +82,11 @@ hr.mainhr {
 }
 
 /*---Navigation---*/
+
 header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
@@ -113,7 +114,7 @@ img.logonav {
   display: block;
   height: 4rem;  /*This is implicitly setting the height of the nav*/
   margin-left: 1%;
-  background: radial-gradient(circle, hsla(0, 0%, 100%,0.3),transparent 80%);
+  /* background: radial-gradient(circle, hsla(0, 0%, 100%,0.3),transparent 80%); */
 }
 
 a.navitem {
@@ -391,6 +392,7 @@ p.cr{
 }
 
 /*---Media Queries*/
+
 /*Desktop and tablet*/
 @media only screen and (min-device-width: 800px) {
   html {
