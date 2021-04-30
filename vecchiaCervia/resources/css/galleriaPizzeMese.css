@@ -238,10 +238,11 @@ div.mantainRatio .listaIngr {
   position: absolute;
   top: -100%;
   width: 100%;
-  padding-left: 10%;
+  padding-left: 8%;
   background-color: hsla(var(--lightOrange), 0.8);
   border-bottom: hsl(var(--strongOrange)) solid 0.2rem;
   color: hsl(var(--blacklight10));
+  list-style-type: disc;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: bold;
@@ -556,6 +557,10 @@ p.cr{
     width: 10%;
     height: 13.3334%;
     font-size: 3.5rem;
+  }
+
+  div.mantainRatio .listaIngr {
+    font-size: 1.2rem;
   }
 
   div.sliderNav::before {
