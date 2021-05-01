@@ -187,7 +187,7 @@ div .display.y2018 {
 }
 
 div .display.y2021{
-  width: 300%;
+  width: 400%;
 }
 
 div.mantainRatio {
@@ -207,8 +207,8 @@ div .mantainRatio.y2018{
 }
 
 div .mantainRatio.y2021{
-  width: calc(100% / 3);
-  padding-top: calc(25% - 0.4rem);
+  width: calc(100% / 4);
+  padding-top: calc(18.75% - 0.4rem);
 }
 
 div.mantainRatio img {
@@ -418,16 +418,16 @@ div.sliderNav .radioLabel img {
 }
 
 #radio2y2021:checked~.display {
-  transform: translate(-33.333%);
+  transform: translate(-25%);
 }
 
 #radio3y2021:checked~.display {
-  transform: translate(-66.666%);
+  transform: translate(-50%);
 }
 
-/* #radio4y2021:checked~.display {
-  transform: translate(#);
-} */
+#radio4y2021:checked~.display {
+  transform: translate(-75%);
+}
 
 
 /*footer*/
