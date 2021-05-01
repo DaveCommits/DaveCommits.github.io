@@ -336,6 +336,7 @@ div.footersection {
 
 img.footerlogo {
   width: 8rem;
+  height: auto;
   margin: 0 2rem;
 }
 
