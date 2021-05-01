@@ -113,6 +113,7 @@ nav {
 img.logonav {
   display: block;
   height: 4rem;  /*This is implicitly setting the height of the nav*/
+  width: auto;
   margin-left: 1%;
   /* background: radial-gradient(circle, hsla(0, 0%, 100%,0.3),transparent 80%); */
 }
@@ -156,7 +157,8 @@ h1.hiddenh1{
 
 img.logotop {
   display: block;
-  width:100%;
+  width: 100%;
+  height: auto;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -182,6 +184,7 @@ figure.pizzamesebox {
 img.pizzamese {
   display: block;
   width: 100%;
+  height: auto;
   border: 2px solid hsl(var(--strongOrange));
   border-radius: 1rem;
 }
