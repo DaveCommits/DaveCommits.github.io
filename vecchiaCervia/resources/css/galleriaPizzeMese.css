@@ -7,6 +7,7 @@
   src: local(''),
        url('../fonts/playball-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/playball-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: optional;
 }
 
 /* roboto-300italic - latin */
@@ -17,6 +18,7 @@
   src: local(''),
        url('../fonts/roboto-v27-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/roboto-v27-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: optional;
 }
 /* roboto-regular - latin */
 @font-face {
@@ -26,6 +28,7 @@
   src: local(''),
        url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: optional;
 }
 /* roboto-700 - latin */
 @font-face {
@@ -35,6 +38,7 @@
   src: local(''),
        url('../fonts/roboto-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/roboto-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: optional;
 }
 
 /*---Global styles---*/
