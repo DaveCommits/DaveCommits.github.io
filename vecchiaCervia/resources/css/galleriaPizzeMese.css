@@ -7,7 +7,7 @@
   src: local(''),
        url('../fonts/playball-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/playball-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: optional;
+  font-display: block;
 }
 
 /* roboto-300italic - latin */
@@ -18,7 +18,7 @@
   src: local(''),
        url('../fonts/roboto-v27-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/roboto-v27-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: optional;
+  font-display: swap;
 }
 /* roboto-regular - latin */
 @font-face {
@@ -28,7 +28,7 @@
   src: local(''),
        url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: optional;
+  font-display: block;
 }
 /* roboto-700 - latin */
 @font-face {
@@ -585,8 +585,13 @@ p.cr{
     background-color: transparent;
   }
 
+  section p, section h1, section h2 {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
   a.navitem {
-    padding: 0.1rem 0.2rem;
+    padding: 0.1rem 0.4rem;
   }
 
   p.navitemdesc {

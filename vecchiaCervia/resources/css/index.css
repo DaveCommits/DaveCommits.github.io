@@ -206,7 +206,8 @@ img.logotop {
   margin: 4rem auto;
 }
 
-h3.manifestdesc {
+h2.manifestdesc {
+  font-size: 2.5rem;
   font-family: 'Playball', Helvetica, sans-serif;
   text-align: center;
   color: hsl(var(--blacklight20));
@@ -218,13 +219,13 @@ p.subtitle {
   color: hsl(var(--blacklight20));
 }
 
-figure.pizzamesebox {
-  width: 90%;
+figure.imgwithdesc {
+  width: 100%;
   max-width: 60rem;
   margin: 2rem auto;
 }
 
-img.pizzamese {
+img.bordered {
   display: block;
   width: 100%;
   height: auto;
@@ -232,12 +233,13 @@ img.pizzamese {
   border-radius: 1rem;
 }
 
-figcaption.pizzamesedesc {
+figcaption.borderedimgdesc {
   font-size: 1.2rem;
   font-family: 'Roboto',cursive;
   font-weight: 300;
   font-style: italic;
-  padding: 1rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 h3.mesipassati {
